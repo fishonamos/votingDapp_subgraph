@@ -1,0 +1,113 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      }
+    ],
+    "name": "changedOwner",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_candidateAddr", "type": "address" }
+    ],
+    "name": "getCandidateDetails",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "id", "type": "address" },
+          { "internalType": "string", "name": "name", "type": "string" },
+          { "internalType": "enum Posts", "name": "post", "type": "uint8" },
+          { "internalType": "uint32", "name": "voteCount", "type": "uint32" }
+        ],
+        "internalType": "struct Candidate",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_candidateAddr", "type": "address" }
+    ],
+    "name": "getCandidateVoteCount",
+    "outputs": [{ "internalType": "uint32", "name": "", "type": "uint32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_id", "type": "address" },
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "uint256", "name": "_level", "type": "uint256" },
+      { "internalType": "string", "name": "_matno", "type": "string" },
+      { "internalType": "enum Posts", "name": "_post", "type": "uint8" }
+    ],
+    "name": "registerCandidate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_id", "type": "address" },
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "uint256", "name": "_level", "type": "uint256" },
+      { "internalType": "string", "name": "_matno", "type": "string" }
+    ],
+    "name": "registerVoter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalParticipant",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalVoteCount",
+    "outputs": [{ "internalType": "uint32", "name": "", "type": "uint32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "enum Posts", "name": "_post", "type": "uint8" },
+      { "internalType": "address", "name": "_candidateAddr", "type": "address" }
+    ],
+    "name": "vote",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

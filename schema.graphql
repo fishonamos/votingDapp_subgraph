@@ -1,0 +1,9 @@
+type changedOwner @entity(immutable: true) {
+  id: Bytes!
+  newOwner: Bytes! # address
+  oldOwner: Bytes! # address
+  message: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
