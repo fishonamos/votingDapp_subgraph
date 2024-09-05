@@ -1,0 +1,54 @@
+/* src/App.css */
+
+body {
+  background-color: black;
+  color: green;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: black; /* Ensure the background is black */
+  color: green; /* Text color is green */
+}
+
+h1 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input {
+  background-color: black;
+  border: 1px solid green;
+  color: green;
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border-radius: 4px; /* Add rounded corners for better aesthetics */
+}
+
+button {
+  background-color: green;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px; /* Add rounded corners for better aesthetics */
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+input::placeholder {
+  color: green;
+}
